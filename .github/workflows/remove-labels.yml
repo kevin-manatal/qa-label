@@ -1,0 +1,14 @@
+name: Remove Label
+
+  pull_request:
+    types: [opened, edited, synchronize]
+
+jobs:
+  remove_label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-remove-labels@v1
+        if: ${{ startsWith(github.event.comment.body, '/remove-labels') }}
+        with:
+          labels: qa-approval
