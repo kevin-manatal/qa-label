@@ -1,8 +1,8 @@
 name: Remove Label
 
+on:
   pull_request:
     types: [opened, edited, synchronize]
-
 jobs:
   remove_label:
     runs-on: ubuntu-latest
