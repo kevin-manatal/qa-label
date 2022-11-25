@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions-ecosystem/action-remove-labels@v1
-        if: ${{ startsWith(github.event.comment.body, '/remove-labels') }}
+        if: true == true
         with:
           labels: qa-approved
