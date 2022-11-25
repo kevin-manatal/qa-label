@@ -1,4 +1,4 @@
-name: Remove Label
+name: Remove QA Label on change
 
 on:
   pull_request:
