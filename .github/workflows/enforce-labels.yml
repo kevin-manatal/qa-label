@@ -1,4 +1,4 @@
-name: Enforce PR labels
+name: Enforce QA label
 
 on:
   pull_request:
